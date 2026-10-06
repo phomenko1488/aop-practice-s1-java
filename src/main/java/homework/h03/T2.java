@@ -1,5 +1,10 @@
 package homework.h03;
 
-// advanced
-// https://leetcode.com/problems/reverse-integer/
-public class T2 {}
+public class T2 {
+    public int differenceOfSums(int n, int m) {
+        int totalSum = n * (n + 1) / 2;
+        int k = n / m;
+        int num2 = m * k * (k + 1) / 2;
+        return totalSum - 2 * num2;
+    }
+}
