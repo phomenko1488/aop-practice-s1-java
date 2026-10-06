@@ -1,5 +1,8 @@
 package homework.h01;
 
-// base
-// https://leetcode.com/problems/palindrome-number/
-public class T1 {}
+
+public class T1 {
+    public int countOdds(int low, int high) {
+        return (high + 1) / 2 - low / 2;
+    }
+}
