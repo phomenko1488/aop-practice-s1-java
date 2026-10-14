@@ -1,5 +1,16 @@
 package homework.h04;
 
 // base
-// https://leetcode.com/problems/plus-one/
-public class T1 {}
+// https://leetcode.com/problems/number-complement
+public class T1 {
+
+    public int findComplement(int num) {
+        int mask = 0;
+        int temp = num;
+        while (temp > 0) {
+            mask = (mask << 1) | 1;
+            temp >>= 1;
+        }
+        return num ^ mask;
+    }
+}
