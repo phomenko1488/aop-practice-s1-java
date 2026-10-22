@@ -1,22 +1,23 @@
 package homework.h03;
 
-
+// advanced
+// https://leetcode.com/problems/avarage-salary/
 public class T1 {
-    public double average(int[] salary) {
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
-        int sum = 0;
+  public double average(int[] salary) {
+    int min = Integer.MAX_VALUE;
+    int max = Integer.MIN_VALUE;
+    int sum = 0;
 
-        for (int s : salary) {
-            sum += s;
-            if (s < min) {
-                min = s;
-            }
-            if (s > max) {
-                max = s;
-            }
-        }
-
-        return (double) (sum - min - max) / (salary.length - 2);
+    for (int s : salary) {
+      sum += s;
+      if (s < min) {
+        min = s;
+      }
+      if (s > max) {
+        max = s;
+      }
     }
+
+    return (double) (sum - min - max) / (salary.length - 2);
+  }
 }
