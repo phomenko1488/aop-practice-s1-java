@@ -3,6 +3,8 @@ package homework.h07;
 import java.util.ArrayList;
 import java.util.List;
 
+// base
+// https://leetcode.com/problems/fizz-buzz/
 public class T1 {
   public List<String> fizzBuzz(int n) {
     List<String> result = new ArrayList<>(n);
