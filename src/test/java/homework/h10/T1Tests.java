@@ -45,6 +45,6 @@ public class T1Tests {
   void testLargerValues() {
     assertEquals('c', solver.kthCharacter(10));
     // k = 500: (500 - 1) = 499 (0b111110011 має 6 одиничних бітів -> 'a' + 6 = 'g')
-    assertEquals('g', solver.kthCharacter(500));
+    assertEquals('h', solver.kthCharacter(500));
   }
 }

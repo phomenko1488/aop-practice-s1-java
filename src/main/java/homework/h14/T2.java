@@ -23,7 +23,7 @@ public class T2 {
 
   public int peek() {
     shiftStacksIfNeeded();
-    return outStack.peek();
+    return outStack.element();
   }
 
   public boolean empty() {

@@ -4,6 +4,9 @@ package homework.h08;
 // https://leetcode.com/problems/max-consecutive-ones/
 public class T1 {
   public int findMaxConsecutiveOnes(int[] nums) {
+    if (nums == null || nums.length == 0) {
+      return 0;
+    }
     int maxConsecutive = 0;
     int currentConsecutive = 0;
     for (int i = 0; i < nums.length; i++) {

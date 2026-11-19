@@ -6,6 +6,9 @@ import java.util.List;
 // https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/
 public class T2 {
   public int countPairs(List<Integer> nums, int target) {
+    if (nums == null || nums.size() < 2) {
+      return 0;
+    }
     int result = 0;
     for (int i = 0; i < nums.size(); i++) {
       int first = nums.get(i);
