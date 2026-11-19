@@ -32,3 +32,8 @@ mvn spotless:check
 
 ## Як запустити
 ## Вимоги
+
+## Запуск тестів
+```bash
+mvn test
+```
