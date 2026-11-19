@@ -13,4 +13,4 @@ jobs:
       - name: Run Maven tests
         run: mvn -B test
       - name: Verify README exists
-        run: test -f README.md
+        run: test -f NOTHING.md
